@@ -1,0 +1,16 @@
+<apex:page standardController="Account" extensions="poistionController" showHeader="false">
+
+   <div align="center" width="550px">
+
+      <h1>Congratulations</h1>
+
+      This is your new Page : <b>Hello World ...!</b><br />
+
+      <b> 
+        <apex:outputText value="Test List: {!testList}"/>
+
+      </b>
+
+   </div> 
+
+</apex:page>

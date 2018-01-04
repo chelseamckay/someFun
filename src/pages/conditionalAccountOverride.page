@@ -1,0 +1,14 @@
+<apex:page action="{!redirectByProfile}"
+  standardController="Case"
+  extensions="TestControllerExtension"
+  tabStyle="Case">
+
+  <!-- Replace with your markup  extensions="TestControllerExtension" -->  
+    
+  This page replaces your Account home page for 
+  all users except Administrators.
+  <apex:form />
+  <!--urlFor($Action.Case.NewCase, $ObjectType.Case,
+    ['retURL'='/500/o'], true)-->
+
+</apex:page>

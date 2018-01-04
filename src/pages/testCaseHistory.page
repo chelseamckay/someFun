@@ -1,0 +1,22 @@
+<apex:page controller="TableController" sidebar="false" contentType="application/vnd.ms-excel#SalesForceExport.xls" cache="true">
+ 
+    <table>Cisco Meraki Price Book outside pageBlock3
+    </table>
+    <table>Cisco Meraki Price Book outside pageBlock3
+    <br>Cisco Meraki Price Book outside pageBlock3
+    </br>
+    </table>
+    <table>Cisco Meraki Price Book outside pageBlock3
+    </table>
+    <apex:dataTable value="{!dataTable}" var="v" id="test">
+    <apex:column >
+    
+    </apex:column>
+    <br>
+    Cisco Meraki Price Book outside pageBlock2
+    </br>
+    Cisco Meraki Price Book outside pageBlock3
+</apex:dataTable>
+
+
+</apex:page>

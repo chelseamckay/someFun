@@ -1,0 +1,37 @@
+<apex:page controller="iFrameTestController" standardStylesheets="false"  >
+
+<script src="/support/console/28.0/integration.js" type="text/javascript"></script>
+  <script type="text/javascript"> 
+    
+    var clickEventHandler = function ( result ) {
+          if( !result.windowHidden ) {
+            sforce.console.getFocusedPrimaryTabObjectId( initNotes ); 
+          }
+        };
+        
+        var initNotes = function initNotes( result ) {
+          setMid( result.id );
+        };
+          
+    sforce.console.onCustomConsoleComponentButtonClicked( clickEventHandler );
+  
+    function closeCustomConsoleComponent() {
+      sforce.console.setCustomConsoleComponentWindowVisible( false );
+    }
+    
+  </script>
+  
+  <apex:form >
+    <apex:actionFunction name="setMid" action="{!setMid}" rerender="mainPanel" status="loadStatus">
+      <apex:param id="objId" name="objId" value="" />
+    </apex:actionFunction>   
+  </apex:form>
+
+  <h1>Congratulations</h1>
+  This is your new Page
+  IFrame:
+  <apex:outputPanel id="mainpanel">
+   <apex:iframe src="{!PrismURL}" height="800px" width="100%" scrolling="true" id="theIframe"/>
+   </apex:outputPanel>
+
+</apex:page>

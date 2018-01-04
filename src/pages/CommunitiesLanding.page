@@ -1,0 +1,5 @@
+<apex:page id="communitiesLandingPage" controller="CommunitiesLandingController" action="{!forwardToStartPage}" title="{!$Label.site.site_login}">
+
+<a href="http://chelseadevorg-dev-ed.my.salesforce.com/ideas/ideaList.apexp?c=09aj0000000VxSE">Ideas</a>
+
+</apex:page>

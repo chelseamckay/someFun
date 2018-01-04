@@ -1,0 +1,5 @@
+<apex:page standardController="Task" > 
+<apex:form > 
+<apex:inputField value="{!Task.WhoId}"/> 
+</apex:form> 
+</apex:page>

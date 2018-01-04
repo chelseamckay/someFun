@@ -1,0 +1,5 @@
+<apex:page standardController="CustomTest__c" >
+
+hi there
+
+</apex:page>

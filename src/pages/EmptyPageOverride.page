@@ -1,0 +1,9 @@
+<apex:page standardController="CustomTest__c">
+
+  <apex:detail >
+  <h1>Congratulations</h1>
+  This is your new Page
+  </apex:detail>
+
+
+</apex:page>

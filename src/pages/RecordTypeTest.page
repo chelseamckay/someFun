@@ -1,0 +1,6 @@
+<apex:page controller="RecordTypeController">
+
+<!--<apex:outputField value="{!Account.name}" >
+</apex:outputfield>-->
+ 
+</apex:page>

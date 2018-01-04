@@ -1,0 +1,12 @@
+<apex:page standardController="Account"> 
+<apex:tabPanel switchType="client" >
+        <apex:tab label="Details" name="FoldDetails" id="tabdetails"> 
+            <apex:detail relatedList="false" title="true" inlineEdit="true" showChatter="false"/>
+        </apex:tab>
+        <apex:tab label="Feed" name="Feed" id="tabFeed"  >
+              <apex:outputPanel > 
+                  <chatter:feedWithFollowers entityId="{!Id}" showHeader="true" />
+              </apex:outputPanel>
+        </apex:tab>
+</apex:tabPanel>
+</apex:page>

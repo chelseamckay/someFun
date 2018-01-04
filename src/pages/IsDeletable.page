@@ -1,0 +1,6 @@
+<apex:page standardController="case" extensions="CaseCommentTestExt">
+
+Case comment deletable property: {!deletableProperty} <br/>
+Case comment updatable property: {!UpdateableProperty}
+
+</apex:page>

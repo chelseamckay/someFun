@@ -1,0 +1,22 @@
+<apex:page controller="SubmitCaseController"> 
+
+<h1>Submit New Case</h1> 
+
+<apex:form > 
+<apex:pageMessages /> 
+<table> 
+<tr> 
+<th>Subject:</th> 
+<td><apex:inputText required="true" value="{!c.Subject__c}"/></td> 
+</tr> 
+<tr> 
+<th>Description:</th> 
+<td><apex:inputTextArea required="true" rows="5" value="{!c.Description__c}"/></td> 
+</tr> 
+<tr> 
+<td><apex:commandButton value="Submit Case" action="{!submitCase}"/></td> 
+</tr> 
+</table> 
+</apex:form> 
+
+</apex:page>

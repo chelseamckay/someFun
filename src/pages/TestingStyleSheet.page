@@ -1,0 +1,32 @@
+<apex:page standardStylesheets="false" showHeader="false" sidebar="false" >
+  
+<link rel="stylesheet" type="text/css" href="{!URLFOR($Resource.SemanticUI, 'semantic.min.css')}" />
+   
+  Testing Testing
+  
+  <c:TestingStyleSheetComponent />
+  
+  
+  
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script src="{!URLFOR($Resource.SemanticUI, 'semantic.min.js')}"></script>
+    <script>
+        function rerenderCaller() {
+            $('.ui.modal .ui.menu .item').tab();
+            $('.ui.dropdown').dropdown();
+        }
+        function msgHider() {
+            $('#msgContainer .ui.message').hide();
+        }
+        function CommFunc(str) {
+            var cm = prompt("Please enter your comment here");
+            if (cm != null && cm.trim() != '') {
+                CommentFunc(str, cm);
+            }
+        }
+        $(document).ready(function() {
+            rerenderCaller();
+        });
+    </script>
+  
+</apex:page>

@@ -1,0 +1,10 @@
+<apex:page standardController="contact">
+
+empty page
+<apex:form >
+      <apex:image url="{!$User.Signature__c}">
+    </apex:image>
+    
+</apex:form>
+ 
+</apex:page>

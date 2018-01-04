@@ -1,0 +1,10 @@
+<apex:page showHeader="true">
+  
+  Is there a header above?
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  Is there a footer below?  
+  
+</apex:page>
